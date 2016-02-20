@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>custom-element-decorators</title>
+</head>
+<body>
+<custom-element is-awesome="true" list="[1,2,3]"></custom-element>
+<script src="index.js"></script>
+<script>
+    var $elem = document.querySelector('custom-element')
+
+    console.log($elem.hidden)
+    console.log($elem.list)
+    console.log($elem.isAwesome)
+</script>
+</body>
+</html>
